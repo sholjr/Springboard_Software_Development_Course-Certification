@@ -1,0 +1,19 @@
+sholjr@Xypher:/mnt/c/users/shawn/OneDrive$	Notes on learning the terminal (Written ont he Terminal) 
+
+A shell is a program that process commands that will return an output
+
+A terminal referes to a wrapper program which will run shells
+- Terminals use to be physical things with only a screen anda keyboard.
+
+
+pwd stands for "print working directory"
+- This tells you what directory you're looking at
+
+cd stands for "change directory"
+- This allows you to move around directories
+
+ls stands for "list"
+- This shows you what files are in the directory your working in
+
+
+

@@ -1,0 +1,60 @@
+What is Version Control? 
+A system that allows for editing of mutiple revisions of the same unit of information
+
+VSA allows mutiple actors to cooperate and share files
+
+Why is VCS useful 
+* It enforces discipline 
+* It archives versions of information
+* It hosts a history of information of prior versions
+* Allows for a simple an easy way for many to collaberate. 
+* Recovers prior accidental mistake that can "break code" or if something is accidentally deleted. 
+* Conserves system workspace / data
+
+The Evolution of Version Control Systems (VCS)
+https://www.ktpql.com/evolution-of-version-control-systems/
+
+50's & 60's
+Program source code was written on punch cards so programs where not shared between others at this time, the "Source code control system" was simply your desk drawer
+
+Early 70's 
+Programmers starting to work on a modularization of source code. 
+They would use phyiscal bulletin boards to monitor source control codes of there different modules
+
+Late 70's
+With the growth of text editors and disk drives, programmers wanted more control over revision history of their source code
+SCCS (Souce Code Control System) is a version control system that was designed to track changes in source code or other text files while a piece of software was still in development.
+SCCS was developed by Bell labs in 1972 by Marc Rochkind
+The first public release of SCCS was version 4 and it was launched on Feburary 18th, 1977
+
+The 80's
+Revision Control System (RCS) stored a set of edit instructions that would go back to an earlier version of a file or program
+RCS was released in 1982 by Walter F. Tichy.
+
+The 90's
+Concurrent Versions Systems (CVS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GETTING TO KNOW GIT / WORKING WITH GIT
+
+Git alternative article --> https://www.infoworld.com/article/2338598/3-great-git-alternatives-fossil-mercurial-and-subversion.html
+
+
