@@ -1,6 +1,5 @@
 Git Handout --> https://lessons.springboard.com/GitHub-Handout-260f422b604880cc9fdcf8e42a0a1099
 
-After using Git Desktop, I would like this save file to get pushed to Github
 
 The command [git log] will show previous git commit history
 
@@ -13,4 +12,8 @@ In order to go back to a pervious git commit, but you want to erase or "destroy"
 [git commit -m] will stage changes in [git status] and the "-m" flag allows for a custom message to be used to better recall your commit changes. 
 
 When using the [git log] command press the "Q" key to exit the log and return to the terminal 
+
+[git branch] shows how many branches are in the current git repository, branches allow mutiple users to collaborate on a signal project
+
+
 
