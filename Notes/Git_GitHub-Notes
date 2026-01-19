@@ -15,5 +15,10 @@ When using the [git log] command press the "Q" key to exit the log and return to
 
 [git branch] shows how many branches are in the current git repository, branches allow mutiple users to collaborate on a signal project
 
+[git branch {new branch}] will create a new working branch of your working repository
+[git checkout] Switches branches or restores working files to a switch a branch use [git checkout {new branch}]
+You can also use [git swtich] to change branches
+[git merge {branch name}] merges the split branch to the main branch
+
 
 
