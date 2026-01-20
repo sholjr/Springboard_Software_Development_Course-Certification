@@ -1,0 +1,28 @@
+Shawn A. Holland Jr.
+
+Terminal Exercices
+
+Part 1
+
+1   Mkdir first
+2   Cd first
+3   Touch person.txt
+4   Mv person.txt another.txt
+5   Cp another.txt copy.txt
+6   Rm copy.txt
+7   cp -r first second
+8   Rmdir second
+
+Part 2
+
+1   The man command opens a manual for commands. With the man command you can see an explanation of a command, the flags the command can use, what the flags do when used with a command. You can scroll with either the mouse or the arrow keys. You can exit the man command by pressing the “Q” key to Quit the manual. 
+2   Ls -l uses a long listed format. Ls -a  shows ignored files that start with a (.) 
+3   CTRL + LEFT/RIGHT Arrow
+4   To get to the end of a line you need to use CTRL + E
+5   CTRL+A
+6   ALT + Deletes
+7   A shell is a program that processes commands that will result in an output. And a terminal is a wrapper program that can run shells.
+8   An absolute path is a path that starts at your root directory
+9   A relative path is a path that starts at your current directory.
+10  A flag is a modifier that gets added to a command to change the behavior or result of a command (Examples; ls -a, ls -l, rm -r)
+11  When using rm -rf the “r” flag removes directories and their contents, while the “f” flag forces nonexistent files and arguments.
