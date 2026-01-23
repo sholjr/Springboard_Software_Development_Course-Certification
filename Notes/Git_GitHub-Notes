@@ -20,5 +20,5 @@ When using the [git log] command press the "Q" key to exit the log and return to
 You can also use [git swtich] to change branches
 [git merge {branch name}] merges the split branch to the main branch
 
-
+Github Handout --> https://lessons.springboard.com/GitHub-Handout-260f422b604880cc9fdcf8e42a0a1099
 
