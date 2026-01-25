@@ -1,0 +1,69 @@
+A Brief History of the World Wide Web
+
+•	Tim Berners-Lee   Hired at C.E.R.N as an independent IT professional to computerize CERN’s Proton Synchrotron’s control system
+•	Tim wrote the program “Enquire” named after a Victorian reference book
+o	Fun Fact – The name book that inspired the program Enquire was “Enquire Within upon Everything”, released in 1980 by Robert Kemp Philp
+•	Tim proposed the “World Wide Web” In March 1989 and his second proposal in May 1990
+•	Tim Berners-Lee joined Hypertext in 1989 
+•	Belgian systems engineer Robert Cailliau worked with Tim Berners-Lee to create a formal management proposal, which got formalized in November 1990
+•	The first web server and web browser where running at the end of 1990 on a NeXT computer
+•	In 1991 the first web server outside of Europe was at SLC “Standford Linear Accelerator Center in California
+•	In 1993 CERN made the Web should b en open standard for everyone to use 
+•	In 1994 the First Inertnation World Wide Web conference was organized at CERN by Robert Cailliau. 
+o	This would be known as the “Woodstock of the Web”
+
+What Are Networks	Notes
+
+•	Computers used to be used to exchange information between different people and computers mostly seen in research labs
+•	Prior to was having somebody walk a pile of punch cards or reel of magnetic tape across a building. 
+o	This would be later known as ‘sneakernet”
+o	“Sneakernet” is a slang term for physically transferring data (like, USB drives, HDD’s, or tapes) rather than move data through a computer network
+•	An additional benefit to having a network was being able to share physical resources like printers and storage drives
+•	Small networks are called Local Area Networks otherwise known as LANs
+•	The most famous and successful LAN technologies that came was ethernet, which was produced by Xerox in the early 1970s
+•	Ethernet is simplified as a series of computers that are connected to a common ethernet cable
+o	The data moves by rewriting the data as an electrical signal, onto the cable
+•	With ethernet sending out a signal to all computers it became an issue of knowing which computer was meant for the data, so Xerox developed a unique Media Access Control Address. 	
+o	This would be known as a computer’s MAC Address
+•	A computer’s MAC Address would be in the header of any data meant to be sent over the network.
+•	This allowed the computer to only process data when they see the computer’s designated MAC address
+•	The term for the ethernet approach is known as Carrier Sense Multiple Sense Access, or CSMA for short
+•	A “carrier” is any medium that carries data in any shared transmission
+o	Copper cable for ethernet and radio waves for WiFi
+•	Bandwidth Is the rate in which a carrier can transmit data
+•	When 2 or more computers tried to write data through a shared network (such as ethernet) the data can bunched together and cause a Collision. 
+•	Computers can detect a collision by detecting certain signals on the wire, the obvious solution was for the computers to send transmissions after other computers stop transmitting their data
+•	All the computers would wait until the signal was clear to push forth a transmission, however when that became the SOP there ended up being more collisions due to all the computers pushing data during any pause at the same time
+•	Ethernet had an effective and simple solution  After a collision took place they would wait a short period of time before retransmitting the signal. And the wait time would be randomized so if a computer waited 1-second then another computer would transmit after 1.3 seconds after a collision
+•	If the network is congested then the computers will wait 1 second, 2 seconds, 4 seconds, 8 seconds, 16 seconds, ETC. 
+•	Exponential Backoff is when computers wait prolonged periods of time to back off and increase wait times during network congestion and multiple collisions
+•	A Collision Domain is the reduction of computers on a shared network, A Switch is used to separate computer’s MAC addresses to their sides of the network
+•	The internet is a bunch of small networks feeding into one big server which is what allows inter-network communications
+•	There is normally more than one path for a computer network to get data from one another
+•	Circuit Switching is the physical switching of circuits to reroute traffic transmissions to the correct destination
+•	Message Switching is the passing of signals through multiple stops  
+•	Hop count is the number of stops that a message/signal stop at before arriving at it’s designated destination
+•	A Hop Limit is a notice on abnormally high hop counts indicating that something has gone wrong while sending transition
+•	A Packet is when a large sized transmission gets chopped into smaller pieces. Making transmissions more efficient
+•	 Each packet contains a destination address on a network so routers know how to forward transmissions
+o	This format is defined in “Internet Protocol” or IP has a standard in the 1970s
+•	I.P Address is  a four 8-bit numbers written with dots
+•	TCP/IP is a protocol that counters an issue with receiving packets out of order
+•	With the internet running on the approach of small packets sending data and transmissions through different routes is known as Packet Switching
+•	ARPANET named after the Advanced Research Projects Agency
+
+What is the Internet Notes
+
+•	User Datagram Protocol – UDP  is a unique header that is inside of the data payload
+o	UDP Contains a port number that applications use to narrow finding packet data 
+o	Checksum is used to verify that the packet data is correct 
+•	Internet Protocol Sends a packet to the correct computer & The UDP gets the packet to the program on the computer
+•	The UDP is stored 16-bit integers
+•	UDP can not correct nor replace missing data that does not transmit properly
+•	Transmission Control Protocol also rides in the data payload of IP packets. This is used when a transmission needs to arrive at it’s destination even if it’s incomplete
+•	Domain Name System (DNS)  are customed address that changes website’s IP addresses and there ports to something memorable
+
+What is the World Wide Web – Notes
+
+•	The web uses a Uniform Resource Locator (URL) to find web addresses
+•	The first search engine was JumpStation made by Johnathon Fletcher in 1993 at the university of Stirling
