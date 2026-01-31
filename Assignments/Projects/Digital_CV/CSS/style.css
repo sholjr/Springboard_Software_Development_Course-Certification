@@ -22,7 +22,7 @@ a {
 
 /* Changes to the Profile Sidebar */
 
-.portrait img {
+#portrait img {
     height: 175px;
     width: 175px;
     border-radius: 50%;
@@ -30,13 +30,13 @@ a {
 
 }
 
-.personal-info .portrait {
+#personal-info #portrait {
     box-sizing: border-box;
     display: grid;
     height: 100;
     place-items: center;
 }
-.Profile {
+#Profile {
     position: relative;
     display: block;
     margin-left: 25px;
@@ -47,7 +47,7 @@ a {
     
 }
 
-.info{
+#info{
     display: grid;
     grid-template-columns: auto 1fr;
     row-gap: 20px;
@@ -95,7 +95,7 @@ blockquote {
 
 /* Skills Section (Under Profile side bar) */
 
-.skills  {
+#skills  {
     position: relative;
     display: block;
     margin-left: 25px;
@@ -104,17 +104,23 @@ blockquote {
     width: 380px;
 }
 
-.exp {
+#exp {
     padding: 2%;
 }
 
-.skills h3 {
+#skills h3 {
     text-align: center;
     font-size: 22px;
     margin-top: 2%;   
 }
 
-.skills li {
+#skills li {
     float: center;
     text-indent: 10px;
+}
+
+/* Start of About section (This will be on the right of the profile sidebar -at the top-) */
+
+.about {
+
 }
