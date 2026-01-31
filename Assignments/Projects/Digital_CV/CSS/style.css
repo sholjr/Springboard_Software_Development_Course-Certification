@@ -1,3 +1,4 @@
+/* Global changes to body and headings */
 body {
     background-color: #F5FFFA;
     font-family:Arial, Helvetica, sans-serif
@@ -10,3 +11,40 @@ h2 {
 h3 {
     font-size: 20px;
 }
+
+/* Changes to the Profile Sidebar */
+
+.personal-info {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 325px;
+    padding: 15px;
+    
+}
+.personal-info .portrait {
+    box-sizing: border-box;
+    display: grid;
+    height: 100;
+    place-items: center;
+}
+
+.portrait img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border: 10px solid turquoise;
+
+}
+blockquote {
+    padding: 5px;
+    margin: 1%;
+}
+/* End of Profile Sidebar Changes */
+
+/* Skills Section (Under Profile side bar) */
+
+
+
