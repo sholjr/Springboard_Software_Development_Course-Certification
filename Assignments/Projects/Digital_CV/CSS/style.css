@@ -12,28 +12,15 @@ h3 {
     font-size: 20px;
 }
 
+h4 {
+    text-align: center;
+}
+
 a {
     color: black
 }
 
 /* Changes to the Profile Sidebar */
-
-.personal-info {
-    position: relative;
-    display: block;
-    margin-left: 25px;
-    margin-top: 50px;
-    border-style: solid;
-    width: 325px;
-    padding: 15px;
-    
-}
-.personal-info .portrait {
-    box-sizing: border-box;
-    display: grid;
-    height: 100;
-    place-items: center;
-}
 
 .portrait img {
     height: 175px;
@@ -43,25 +30,66 @@ a {
 
 }
 
+.personal-info .portrait {
+    box-sizing: border-box;
+    display: grid;
+    height: 100;
+    place-items: center;
+}
+.Profile {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 350px;
+    padding: 15px;
+    
+}
+
+.info{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 20px;
+    max-width: 500px;
+    text-indent: 25px;
+}
+
+dt {
+    font-weight:bold;
+
+}
+
 .personal-info h2 {
     text-align: center;
+}
+
+.social { 
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+
 }
 
 .social a {
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     color: black;
     text-decoration: none;
-    float: left;
-    text-indent: 5px;
-    margin-left: 5%;
     
    
 }
 
 blockquote {
+    font-family: 'Times New Roman', Times, serif;
     padding: 5px;
     margin: 1%;
+    text-align: center;
+    font-size: 16px;
 }
 /* End of Profile Sidebar Changes */
 
@@ -73,17 +101,20 @@ blockquote {
     margin-left: 25px;
     margin-top: 5px;
     border-style: solid;
-    width: 325px;
-    padding: 15px;
+    width: 380px;
+}
+
+.exp {
+    padding: 2%;
 }
 
 .skills h3 {
     text-align: center;
     font-size: 22px;
-   
+    margin-top: 2%;   
 }
 
 .skills li {
-    float: left;
+    float: center;
     text-indent: 10px;
 }
