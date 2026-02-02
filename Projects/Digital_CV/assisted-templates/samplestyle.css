@@ -1,0 +1,139 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page Background */
+body {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+/* CV Container */
+.cv-container {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================
+   Sidebar
+   ====================== */
+.sidebar {
+    width: 30%;
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 30px 25px;
+}
+
+.sidebar h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.sidebar .title {
+    font-size: 14px;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+.sidebar h2 {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #374151;
+    text-transform: uppercase;
+}
+
+.sidebar p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.sidebar ul {
+    padding-left: 18px;
+}
+
+.sidebar li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* ======================
+   Main Content
+   ====================== */
+.main-content {
+    width: 70%;
+    padding: 35px 40px;
+}
+
+.main-content section {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e5e7eb;
+    color: #111827;
+    text-transform: uppercase;
+}
+
+.main-content p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* ======================
+   Experience & Projects
+   ====================== */
+.job {
+    margin-bottom: 22px;
+}
+
+.job h3 {
+    font-size: 16px;
+    color: #111827;
+    margin-bottom: 3px;
+}
+
+.company {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.main-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.main-content li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* ======================
+   Print Optimization
+   ====================== */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
