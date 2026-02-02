@@ -23,7 +23,7 @@ a {
 
 /* Changes to the Profile Sidebar */
 
-#portrait img {
+.portrait img {
     height: 175px;
     width: 175px;
     border-radius: 50%;
@@ -31,13 +31,13 @@ a {
 
 }
 
-#personal-info #portrait {
+.personal-info #portrait {
     box-sizing: border-box;
     display: grid;
     height: 100;
     place-items: center;
 }
-#Profile {
+.Profile {
     box-sizing: border-box;
     position: relative;
     display: block;
@@ -49,7 +49,7 @@ a {
     
 }
 
-#info{
+.info{
     display: grid;
     grid-template-columns: auto 1fr;
     row-gap: 20px;
