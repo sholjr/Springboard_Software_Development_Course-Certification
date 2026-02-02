@@ -6,6 +6,7 @@ body {
 
 h2 {
     font-size: 28px;
+
 }
 
 h3 {
@@ -37,12 +38,13 @@ a {
     place-items: center;
 }
 #Profile {
+    box-sizing: border-box;
     position: relative;
     display: block;
     margin-left: 25px;
     margin-top: 50px;
     border-style: solid;
-    width: 350px;
+    width: 375px;
     padding: 15px;
     
 }
@@ -96,12 +98,13 @@ blockquote {
 /* Skills Section (Under Profile side bar) */
 
 #skills  {
+    box-sizing: border-box;
     position: relative;
     display: block;
     margin-left: 25px;
     margin-top: 5px;
     border-style: solid;
-    width: 380px;
+    width: 375px;
 }
 
 #exp {
