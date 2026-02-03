@@ -1,200 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shawn's Curriculum Vitae</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawn's Curriculum Vitae </title>    
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="https://kit.fontawesome.com/c646f88a80.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<!-- Navbar -->
-    <header><div class="Navbar">
-        <h1><strong>Shawn's Engineering Curriculum Vitae </strong></h1>
-        <ul> 
-            <li><a href="Student_CV.html">Main Page</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact-page.html">Contact Page</a></li>
+  <!-- Header / Navbar -->
+  <header>
+    <h1 class="title">Shawn's Engineering Curriculum Vitae</h1>
+
+    <nav class="navbar">
+      <ul class="nav">
+        <li><a href="Student_CV.html">Profile</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact-page.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Sidebar -->
+    <aside>
+
+      <!-- Profile -->
+      <section class="profile">
+        <div class="portrait">
+          <img src="../Assets/port-1.jpg" alt="Portrait of Shawn Holland">
+        </div>
+
+        <h2>Profile</h2>
+
+        <dl class="info">
+          <dt>Name</dt><dd>Shawn A. Holland Jr.</dd>
+          <dt>Birthday</dt><dd>April 1998</dd>
+          <dt>Age</dt><dd>27</dd>
+          <dt>Area</dt><dd>Menomonie, WI</dd>
+          <dt>Title</dt><dd>Software Engineer</dd>
+          <dt>Email</dt><dd>notreal@fakeemail.com</dd>
+        </dl>
+
+        <h4>Check out my socials</h4>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/sholjr" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shawn-holland-8aa71a109/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
+          </li>
         </ul>
-    </div></header>
-<!--End of Navbar-->
 
-<!--Side bar containing personal information-->
-<section class="Profile">
-    <div class="personal-info"> 
-        <div class="self-portrai">
-            <img src="Assets/port-1.jpg" width=" 175px" height="175px" alt="Self Portrait of Shawn Holland">
-        </div>
-    <h2>Profile</h2>
-<!--Name-->
-    <p>Name: Shawn A. Holland Jr.</p>
-<!--Birthday-->
-    <p>Birthday: April, 1998</p>
-<!--Age-->
-    <p>Age: 27</p>
-<!--Location-->
-    <p>Area: Menomonie, WI</p>
-<!--Occupation-->
-    <p>Title: Software Engineer</p>
-<!--Email-->
-    <p>Email: s0hspamcatcher@notanemail.com</p>
-<!--Social Links (GitHub, Linkedin)-->
+        <blockquote>
+          Gaining the knowledge and experience needed to navigate the future
+          and refine it my way.
+        </blockquote>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h3>My Skills</h3>
+        <ul class="skill-list">
+          <li>Microsoft Excel</li>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+          <li>Xcode</li>
+          <li>Android Studio</li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+
+      <!-- About -->
+      <section class="about">
+        <h2>A Little About Me</h2>
+        <h3>Hello, I'm Shawn</h3>
+
+        <p>
+          I am currently enrolled in Springboard's Software Engineer Certification
+          Course to start a career in data and process engineering. I previously
+          worked through The Odin Project to learn HTML, CSS, and JavaScript and
+          plan to continue after completing my current course.
+        </p>
+
+        <p>
+          Outside of coding, I enjoy reading, playing games, and spending time
+          with my wife.
+        </p>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects">
+        <h2>Projects</h2>
         <ul>
-            <li>GitHub</li>
-            <li>LinkedIn</li>
-        </ul>    
-<!--Primary Goal-->
-<blockquote>Gaining the knowledge and experience needed in order to navigate the future and refine it my way.</blockquote>
-    </div>
-</section>
-<!--End of Profile Sidebar-->
-<!--Start of Skills sidebar (this goes under the main profile sidebar)-->
-<section class="Skills">
-    <h3>My Skills</h3>
-<ul>
-    <li>Microsoft Excel</li>
-    <li>HTML / CSS</li>
-    <li>Javascript</li>
-    <li>MySQL</li>
-    <li>X-Code</li>
-    <li>Android Studio</li>
-</ul>
-</section>
-<!--End of Skills sidebar-->
-<!--top half of main page, mentions a introduction of myself, some of my likes, and my aspirations-->
-<section class="About">
-    <h2>A little about me</h2>
-<h3>Hello, I'm Shawn</h3>
-<p>
-    I am currently going through Springboard's Software Engineer Certification Course in order to start a career in data/process engineering. worked on the Odin Project to start learning HTML, CSS, and Javascript but had to put the project on pause while my computer was in repair. I will return to finish what I started after completion of my current Course. 
-    <br>
-    Some of the things I enjoy to do on my offline time is; Read, Play games, and spend time with my wife. 
-</p>
+          <li>Springboard Software Engineering Certification</li>
+          <li>The Odin Project</li>
+          <li>Harvard CS50</li>
+        </ul>
+      </section>
 
-</section>
-<!--End of About / Introduction section-->
-<!--My current projects (this will be under the about section) -->
-<section class="Projects">
+      <!-- Education -->
+      <section class="education">
+        <h2>Education</h2>
+        <h3>Springboard Software Engineer Course</h3>
+        <p><strong>Online Certification</strong> — <em>January 2026 – May 2026</em></p>
+        <p>
+          Although I have just started this course, I have already learned a
+          great deal and will continue building skills to apply in my career.
+        </p>
+      </section>
 
-<h2>Projects</h2>
-    <ul>
-        <li>Springboard Software Engineering Certification</li>
-        <li>Odin Project</li>
-        <li>Harvard's CS50</li>
-    </ul>
+      <!-- Reading -->
+      <section class="reading">
+        <h2>The Library</h2>
+        <p>
+          Reading is important when developing new skills. Here are a few books
+          I am currently working through:
+        </p>
 
-</section>
-<!--End of Projects-->
-<!--Start of Education-->
-<section class="Education">
-<h2>Education</h2>
-<h3>South Shore Vocational technical Highschool</h3>
-<p><b>Hanover MA</b> <i>September 2012 - June 2017</i></p>
-<p> <em>Degree: Graphic Communitons & GED</em></p>
-<p>Has a technical highschool I was honored to be able to take part in Graphic Communications and learn various skills including Photoshop,InDesign, Illustrator, Photography, and even more.</p>
-<h3>Springboard Software Engineer Course</h3>
-<p><b>Online Cert.</b> <i>January 2026 - May 2026</i></p>
-<p> Although I have just started this online course, I have already learned so much from and will continue to learn everything I can in order to put this knowledge to use in my career.</p>
-</section>
-<!--End of Education Section-->
-<!--Start of Reading section that I am currently reading through-->
-<Section class="Reading">
-    <h2>The Library</h2>
-        <p> Reading is important espically when working on new skills. So here is a list of the books i'm currently working through</p>
-    <ul>
-        <li><b>SQL Quickstart Guide</b> <i>By: Walter Shields</i></li>
-        <li><b>Data Principles to practice, Vol 1.</b> <i>By: Alex Holloways</i></li>
-        <li><b>Data Engineering Foundations</b> <i>By: Cauntum Technologies</i></li>
-    </ul>
+        <ul>
+          <li><strong>SQL QuickStart Guide</strong> — Walter Shields</li>
+          <li><strong>Data Principles to Practice, Vol. 1</strong> — Alex Holloway</li>
+          <li><strong>Data Engineering Foundations</strong> — Cauntum Technologies</li>
+        </ul>
+      </section>
 
-</Section>
-<!--End of Reading-->
-    <!-- Start of Contact Form -->
-    <!-- "*" Means required Field -->
-    <h1> Contact Me</h1>
-     <h2> Want to get ahold of me? Submit your contact request here!</h2>
+      <!-- Contact -->
+      <section class="contact-form">
+        <h2>Contact Me</h2>
+        <p>Want to get ahold of me? Submit your request below.</p>
 
-    <form action="#"> 
-     
-     <!-- User Name*  -->
-       <div class="contact">
-        <label for="username"> First Name: </label>
-        <input 
-          type="text"
-          id="Username"
-          name="Usersname"
-          required
-          placeholder="First Name"
-          >       
-        </div>
-         <div class="contact">
-        <label for="username"> Last Name: </label>
-        <input 
-          type="text"
-          id="Username"
-          name="Usersname"
-          required
-          placeholder="Last Name"
-          >       
-        </div>
-         <div class="contact">
-        <label for="username"> Middle Inital: </label>
-        <input 
-          type="text"
-          id="Username"
-          name="Usersname"
-          required
-          placeholder="Middle Initial"
-          >       
-        </div>
-        <!-- Drop Down List for Name Suffix -->
-        <div>
-            <label for="Suffix">Suffix:</label>
-            <select
-                id="username"
-                name="username"
-            >
-              <option value="Jr">Jr.</option>
-              <option value="Sr">Sr.</option>
-            </select>
+        <form action="#" method="post">
+
+          <div class="contact">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first_name" required>
           </div>
 
-     <!-- User Email* -->
-        <div class="contact">
-        <label for="Email"> Email: </label>
-        <input 
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Enter Email Address"
-          >       
-        </div>
+          <div class="contact">
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last_name" required>
+          </div>
 
-     <!-- User Company / Organization -->
-        <div class="contact">
-        <label for="Organization"> Company: </label>
-        <input 
-          type="text"
-          id="Comapny"
-          name="Company"
-          placeholder="Realrize Studios"
-          >       
-        </div>
+          <div class="contact">
+            <label for="middle-initial">Middle Initial</label>
+            <input type="text" id="middle-initial" name="middle_initial">
+          </div>
 
-     <!-- Message Body* -->
-        <div class="Message">
-        <label for="Message"> Message: </label>
-        <textarea
-          id="Message"
-          name="Message"
-          required
-          placeholder="Write your message here!"
-          ></textarea>     
-        </div>
-
-     <!-- Submit Button* -->
-      <button type="submit"> Submit your request</button>
-</body>
-</html>
+          <div class="contact">
+            <label for="suffix">Suffix</label>
+            <select

@@ -28,10 +28,11 @@ a {
     width: 175px;
     border-radius: 50%;
     border: 10px solid turquoise;
+   
 
 }
 
-.personal-info #portrait {
+.personal-info .portrait {
     box-sizing: border-box;
     display: grid;
     height: 100;
