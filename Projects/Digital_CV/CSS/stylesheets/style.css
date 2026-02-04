@@ -1,24 +1,41 @@
 /* Global changes to body and headings */
 body {
-    background-color: #F5FFFA;
-    font-family:Arial, Helvetica, sans-serif
+    background-color: rgb(100, 191, 182);
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 28px;
-
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
-h4 {
-    text-align: center;
+
+/* Page Layout */
+
+.page-layout {
+   display: flex;
+   align-items: flex-sstart;
+   gap: 50px;
+   margin: 25px;
 }
 
-a {
-    color: black
+#sidebar {
+    width: 375px;
+}
+
+/* Page layout section borders */
+
+.Profile,
+.skills,
+.about,
+.education,
+.projects,
+.reading {
+    border: solid 2px black;
+    border-radius: 25px;
 }
 
 /* Changes to the Profile Sidebar */
@@ -28,29 +45,34 @@ a {
     width: 175px;
     border-radius: 50%;
     border: 10px solid turquoise;
+    text-align: center;
    
-
 }
 
-.personal-info .portrait {
+.personal-info 
+.portrait {
     box-sizing: border-box;
     display: grid;
     height: 100;
     place-items: center;
 }
+
 .Profile {
     box-sizing: border-box;
     position: relative;
     display: block;
     margin-left: 25px;
-    margin-top: 50px;
-    border-style: solid;
     width: 375px;
     padding: 15px;
     
 }
 
-.info{
+.Profile h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.info {
     display: grid;
     grid-template-columns: auto 1fr;
     row-gap: 20px;
@@ -60,12 +82,15 @@ a {
 
 dt {
     font-weight:bold;
+    font-size: 18px;
 
 }
 
 .personal-info h2 {
     text-align: center;
 }
+
+/* Social Media Links */
 
 .social { 
     list-style: none;
@@ -84,8 +109,17 @@ dt {
     color: black;
     text-decoration: none;
     
-   
 }
+
+.resu a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
 
 blockquote {
     font-family: 'Times New Roman', Times, serif;
@@ -98,33 +132,102 @@ blockquote {
 
 /* Skills Section (Under Profile side bar) */
 
-#skills  {
+.skills  {
     box-sizing: border-box;
     position: relative;
     display: block;
     margin-left: 25px;
     margin-top: 5px;
-    border-style: solid;
     width: 375px;
 }
 
-#exp {
-    padding: 2%;
-}
-
-#skills h3 {
+.skills h3 {
     text-align: center;
-    font-size: 22px;
-    margin-top: 2%;   
+    font-size: 22px;  
 }
 
-#skills li {
-    float: center;
-    text-indent: 10px;
+/* Main Content  */
+.main-content {
+    flex: 1;
+    max-width: 1075px;
+}
+.about,
+.education,
+.projects,
+.reading {
+    margin: 0 0 25px 0;
+    padding: 25px;
 }
 
-/* Start of About section (This will be on the right of the profile sidebar -at the top-) */
+.projects {
+    max-width: 350px;
+    height: 255px;
+}
 
-.about {
+.reading {
+    position: relative;
+    max-width: 600px;
+    align-items: right;
+}
+
+.read-project-row {
+    display: flex;
+    flex: 1;
+    gap: 25px
+}
+
+/* Contact Form */
+
+.contact {
+    font-size: 18px;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
+/*  Controls box around form*/
+.msg {
+    box-sizing: border-box;
+    padding: 25px;
+    border: solid 5px black;
+    border-radius: 50px;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    font: inherit;
+    font-size: 18px;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+button {
+    width: 175px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+input::placeholder {
+    color: rgb(160, 154, 154);
+}
+
+input:focus {
+    border: solid 5px white;
+}
+
+
+
+
