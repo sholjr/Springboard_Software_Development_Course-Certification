@@ -1,0 +1,108 @@
+Javascript Handout --> https://lessons.springboard.com/Variables-and-Data-Types-b6467754bfa24b1f8b73f87551223934
+
+Javascript Fundamentals Hand out --> https://lessons.springboard.com/JS-Fundamentals-d6b58513d68a426f9a474f0cc09c0398#3d49b22da82a46f98f7c7ea6f8040caf
+
+
+====================================================
+
+
+JS Building Blocks
+    Values & Variables
+
+Goals 
+ Working with primitive types
+    * Number
+    * String
+    * Boolean
+    * Null
+    * Undefined
+
+ Understand let & const
+
+ Use String Template Literals
+
+ Work with common operators / methods
+
+ To make comments use `//`
+
+====================================================
+
+Primitive Types
+    * Number
+       Numeraic Value
+    * String
+       Text in quotation marks
+    * Boolean
+       True or False values
+    * Null
+    * Undefined
+    * Symbol
+    * BigInt
+       
+Primitive Type -> Numbers
+   A way of storing or repersenting a number in Javascript.
+   Number function allows 
+      Postive,
+      Negitive,
+      Whole (intergers)
+      & Decimal Numbers
+   
+   Opperators
+      Additon, (+)
+      Subtraction, (-)
+      Division, (-)
+      Mutiplaction, (*)
+      Modulo, (%)
+      Exponents, (**)
+
+   N a N ( Not  A Number)
+    0/0 = NaN
+    1 + NaN = NaN
+   
+Variables & let
+   Variables  act like a labeled jar
+     Stores a value and a name so you can;
+        * Recall it
+        * Use it
+        * Change it later   
+           
+   Basic Syntax // let someName = 'value';
+
+   To Update Value(s)
+     [ 'someName' + 'someName' = 'Value' ]
+
+   shorthand version
+     [ 'someName' += 'Value' ] 
+   
+   Can not use Variables with lexically bound names or declared identifiers
+      Use detailed  names rather than simple characters
+   You can not start a Variables with a numerical digit
+
+   Camocase -> When naming this with many words don't capitalize first word but capitalize words that come after the first 
+      Ex ( let someName or let someBodyIUseToKnow )
+
+Unary Variables
+
+   (++) will add 1 to Variables
+   (--) Will deduct 1 from Variables
+
+Constant
+   Basic Syntax
+      (const 'someName' = 4)
+
+   const works like let except you can not change the value
+
+VAR 
+   Prior to let and const var was the only way to declare a Variable. 
+
+   Example Syntax
+      ( var eggs = 12)
+   ** slight difference between var and let, not mentioned yet but has to do with scope*
+
+====================================================
+
+Javascript Fundamentals 
+
+   
+
+          
