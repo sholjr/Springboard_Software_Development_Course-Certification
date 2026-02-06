@@ -1,0 +1,5 @@
+whereIs
+secretMessage
+decryptedMessage
+shiftedVal
+isPartySecured

@@ -99,9 +99,10 @@ VAR
       ( var eggs = 12)
    ** slight difference between var and let, not mentioned yet but has to do with scope*
 
-====================================================
+Booleans
+   True or False values
 
-Javascript Fundamentals 
+
 
    
 
