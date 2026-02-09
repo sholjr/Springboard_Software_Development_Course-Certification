@@ -102,8 +102,46 @@ VAR
 Booleans
    True or False values
 
+Strings
+   Values that use Text
+   Must use either ' or " and wrap text But you can't mix and match
+
+   Strings are indexed, meaning that each character has a positional number The first character of a string will always be at position '0' and will count up from there
+      [ For Ex. "Chicken" = '0123456' ]
+
+   Strings have a 'length' property that will count characters
+      [ "hello".length =an output '5' ]
+   
+   Putting brackets around index will call for the repersenting postion's character
+      { hello [3] = 'l' }
+
+   Strings are immudable and can not be changed
+
+   Some string methods accept arguments that modify the string's behavior. These arguments should be inside (parentheses)
+
+      Explaining stringMethod.indexOf using example string [ let tvShow = 'catdog' ;]
+         tvShow.indexOf('cat') will result in 0
+         tvShow.indexOf('dog') will result in 3
+         tvShow.indexOf ('z')  will result in -1 (not found)
+
+            This method search for which value the search starts at. for example 'cat' is the start of the sting. And 'dog' starts at 3 because thats when it falls in the index.
+
+               If there are more than one letter or reference you will get the first character found
+
+               If there is no value found in the search it will result in -1 
+
+      Explaining stringMethod.slice using example string [ let str = 'supercalifragilisticeexpialidocious'] 
+         str.slice(0,5); will result in 'super'
+         str.slice(5);   will result in 'califragilisticexpialidocious'
+
+REPL
+   R read
+   E evaluate
+   P print
+   L loop
+      
+use [ console.log() ] 
+      
 
 
    
-
-          
