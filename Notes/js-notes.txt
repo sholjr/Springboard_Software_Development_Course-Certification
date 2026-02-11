@@ -175,7 +175,73 @@ Strings
                let yourAge  =19;
                   `You must be ${minAge} to enter. Come back in ${minAge - yourAge} years!`
                      // Results in [ "You mustt be 21 to enter. Come back in 2 years!" ]
-               
+
+Null
+   Intentional absence of any value
+   Must be Assigned
+      Example [ let loggedInUser = null; ]
+         This tells Javascript that the value is nothing  / not assigned yet
+
+Undefined
+   Variables that do not have an Assigned value and are Undefined
+
+Math Object 
+   Contains properties and methods for mathmatical constants and functions
+      // Examples of math objects
+         Pi 
+            Math.PI             // 3.141592653589793
+
+         Rounding a number
+            Math.round(4.9)     //5
+
+         Absolute Values
+            Math.abs(-456)      //456
+
+         Raises # to the #'s power
+            Math.pow(2,5)       //32
+
+         Removes Decimal
+            Math.floor(3.99999) //3
+
+   Random Numbers
+      Math.random()  gives us a random Decimal between 0 and 1 (non-inclusive)
+
+         Example of Math.random
+
+            const step1 = Math.random();
+               //0.561104892810127
+
+            const step2 = step1 * 10
+               //5.561104892810127
+            
+            const step 3 = Math.floor(step2);
+               //5
+            
+            const step 4 = step3 + 1;
+               //6
+
+         Shorthand Example
+            [ Math.floor(Math.random() * 10) + 1 ]
+               //6
+
+parseInt & parseFloat
+
+   Turns strings into numbers. (can cause NaN errors)
+      Examples
+         parseInt('24')          //24
+         parseInt('24.987')      //24
+         parseInt('28dayslater') //28   
+   
+         parseFloat('24.987')          //24.987
+         parseFloat('7')               //7
+         parseFloat('I ate 3 shrimp)   //NaN
+         
+      Returns NaN if there is a character prior to a number
+
+
+
+         
+
                
    
    
