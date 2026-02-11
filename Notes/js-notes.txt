@@ -106,7 +106,7 @@ Strings
    Values that use Text
    Must use either ' or " and wrap text But you can't mix and match
 
-   Strings are indexed, meaning that each character has a positional number The first character of a string will always be at position '0' and will count up from there
+   Strings are indexed, meaning that each character has a positional number The first character of a string will always be at position '0' and will count up from 0 
       [ For Ex. "Chicken" = '0123456' ]
 
    Strings have a 'length' property that will count characters
@@ -134,14 +134,50 @@ Strings
          str.slice(0,5); will result in 'super'
          str.slice(5);   will result in 'califragilisticexpialidocious'
 
-REPL
-   R read
-   E evaluate
-   P print
-   L loop
+   REPL
+      R read
+      E evaluate
+      P print
+      L loop
+         
+   use [ console.log() ] 
+         
+   String Escapes
+      \n - * Newline   
+      \' - * Single quote
+      \" - * Double Quote
+      \\ - * Backslash
+   
+      Example of double Quote
+         "He said \"I ain't happy\""
+            Results in [ He said "I ain't happy" ]
+               Using the Backslash {\} before the quote tells Javascript that the quotes after the Backslash are apart of the string, not the end of a string. The same applies for Single quotes. 
+   
+      Example,  
+         'Jacob isn\'t happy'
+            Results in [ Jacob isn't happy ]
+   
+   String Template Literals
+      Template literals are strings that allow embedded expressions. The expressions will be evaluated and turned into a proper string. 
       
-use [ console.log() ] 
-      
+      Must use the back-tick in order to Template literals (`)
 
-
+         Example [ `I counted ${3 + 4} sheep` // will result in "I countd 7 sheep ]
+   
+            Further Examples
+               let item      = 'cucumbers';
+               let price     = 1.99;
+               let quantity  = 4;
+                  `You bought ${quantity} ${item}, Total Price: $${price*quantity}`;
+                     // Results in [ "You bought 4 cucumbers, Total Price: $7.96" ]
+   
+               const minAge =21;
+               let yourAge  =19;
+                  `You must be ${minAge} to enter. Come back in ${minAge - yourAge} years!`
+                     // Results in [ "You mustt be 21 to enter. Come back in 2 years!" ]
+               
+               
+   
+   
+   
    

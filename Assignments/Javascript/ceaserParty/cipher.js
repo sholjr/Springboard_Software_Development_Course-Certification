@@ -5,4 +5,3 @@ let secretMessage = "";
 let decryptedMessage = ""; 
 let partySecured = false
 
-
