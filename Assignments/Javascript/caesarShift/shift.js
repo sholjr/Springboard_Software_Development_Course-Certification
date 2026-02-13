@@ -1,19 +1,51 @@
-const decimal = Math.random()
-const range = 33 - 3 + 1;
+const emblemClue1 = "Eagle";
+const emblemClue2 = "Laurel";
+const emblemClue3 = 7;
 
-// Question 1 - The 1 is added to ensure that all 31 numbers are possible to be generated from 3 - 33 without the extra +1 we could be missing an end point. 
+//Step 1
 
-const randomRange = decimal * range;
+let start = "";
 
-// Question 2 - We're mutiplying the random decimal by the range to keep the range between 0 and 31
+if (emblemClue1 === "Eagle") {
+    start = "Forum"
+}
+else if (emblemClue1 === "Lion") {
+    start = "Colosseum"
+}
+else {
+    start = "villa"
+}
 
-const randomInt = Math.floor(randomRange);
+//Step 2
 
-// Question 3 -  We're using Math.floor() to always round down to the nearest whole number. We don't want the number to round up to the nearest whole because our count could be off by an additional digit. If the decimal was over 0.5000 it would automatically round up to "1" causing our range to be 1 + 33 - 3 + 1 which would be 32 and would exceed our character by that 1 digit
+if (emblemClue2 === "Laurel" && emblemClue2 === "Forum") {
+    start += "of Augustus"
+}
 
-const shiftValue = randomInt + 3;
+if (emblemClue2 === "Grapes" || emblemClue1 === "Villa") {
+    start += "of Pompey"
+}
 
-// Question 4 - We're adding the 3 to randomInt because there is a chance the random integer could be 0,1, or 2. If this was the case it fall outside of Caesar's 3-33 range. 
+//Step 3
 
+switch (emblemClue3) {
+    case 7:
+        start += "North";
+        break;
+    case 3:
+        start += "South";
+        break;
+    case 9:
+        start += "East"; 
+        break;
+    case 4:
+        start += "West";
+        break;
+}
 
+/* Question 
 
+    It's better to use "===" over "==" because you want to find the Strict equality of your value to ensure that your result will actually be true and will not change when "==" checks the Value (not the type of value)
+    "===" Checks both the type and the value and doesn't normally lead to unexpected results*/
+
+    

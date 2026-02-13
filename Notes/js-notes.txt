@@ -2,6 +2,9 @@ Javascript Handout --> https://lessons.springboard.com/Variables-and-Data-Types-
 
 Javascript Fundamentals Hand out --> https://lessons.springboard.com/JS-Fundamentals-d6b58513d68a426f9a474f0cc09c0398#3d49b22da82a46f98f7c7ea6f8040caf
 
+Javascript Conditional Logic --> https://lessons.springboard.com/Conditional-Logic-a877acf3d3de44d6a3377d5fc0fbe3f7
+
+
 
 ====================================================
 
@@ -81,10 +84,10 @@ Variables & let
    Camocase -> When naming this with many words don't capitalize first word but capitalize words that come after the first 
       Ex ( let someName or let someBodyIUseToKnow )
 
-Unary Variables
+   Unary Variables
 
-   (++) will add 1 to Variables
-   (--) Will deduct 1 from Variables
+      (++) will add 1 to Variables
+      (--) Will deduct 1 from Variables
 
 Constant
    Basic Syntax
@@ -235,15 +238,169 @@ parseInt & parseFloat
          parseFloat('24.987')          //24.987
          parseFloat('7')               //7
          parseFloat('I ate 3 shrimp)   //NaN
-         
+
       Returns NaN if there is a character prior to a number
 
+Conditional Logic
+   Goals
+      * Understand Comparison Operators
+      * Write Conditionals
+      * Work with Boolean Operators
 
 
+   Comparison Operators [ Defults to returning a Boolean ]
+
+         >   // Greater than 
+         <   // Less than
+         >=  // Greater than or equal to
+         <=  // Less than or equal to 
+
+         ==  // equalality
+         !=  // Not equal
+         === // Strict Equality
+         !== // Strict non-equalality
+
+   Most Comparisons are made to compare numbers, however, You can compare strings. When using special characters, accents, and cases they can get "dicey".
+   When comparing strings 'Unicode' identifiers will determine strings Comparisons
+
+   == vs === ( Equality vs Strict Equality)
+
+      == ( Double Equals )
+         Checks equalality of a value, but not equalality of types
+         It coerces both values to the same type and then compares them
+         May lead to unexpected Results
+      
+      === ( Triple Equals )
+         Checks for both values and types
+
+      != is the same has ==     But    it checks if the values are not the same
+
+      !== is the same has ===   But    it checks if values & types are not the same
+
+   Conditional Statements 
+      There are 3 types of conditionals statements
+         If
+         ELSE IF
+         ELSE
+
+      IF
+         Runs designated code if a condition is marked as 'TRUE' 
+
+      ELSE IF
+          A follow up condition if the first 'IF' condtion was not met. 
+
+      ELSE
+         Runs if there 'IF' and 'ELSE IF' did not return a value. 
+         Does not need a conditional argument.  Requires an 'IF' statement, but not an 'ELSE IF'
+
+   Nesting
+      Nesting is the stacking of several layers of conditionals in a given statement.
+
+   Truthy & Falsy Values
+      All values have an inherent truthy or falsy boolean value
+         Values considered 'Falsy'
+            * False
+            * 0
+            * "" (Empty string)
+            * Null
+            * Undefined
+            * NaN
+         All other values are considered truthy
+
+   Logical Operators
+      List of Logical Operators
+         * &&   And 
+                     compares values has true and if both sides are not true then it will return has false
+
+         * ||   OR
+                  compares if one side is true or false, if one side is the same it is returned has true
+
+         * !   NOT
+                  Returns 'TRUE' if the given value is considered 'FALSE'
+
+   Operators Precident
+      Precident Ranking
+         NOT (!)   has a higher precedence than && and ||
+         &&  (AND) has a higher precedence than ||
+         ||  (OR)  has the lowest precedence
+
+      Logic Example
+         ``` let x = 7
+             x==7 || x===3 && x > 10;```
+               Result : 'TRUE'
+         Reason:
+            Sense the (&&) Operators has precedence over the (||) operator the script runs (&&) first. 
+            (x === 3 && x > 10) x == 7
+
+   Switch Value Example 
+      ``` switch  (day) { 
+         case1:
+            console.log("Monday");
+         case2:
+            console.log("Tuesday");
+         case3:
+            console.log("Wednesday");
+         case4:
+            console.log("Thursday");
+         case5:
+            console.log("Friday");
+         case6:
+            console.log("Saturday");
+         case7:
+            console.log("Sunday");
+      } ```
+
+      Adding a 'break;' to the will run only the case(#) that the script is looking for
          
+         ``` switch  (day) { 
+            case1:
+               console.log("Monday");
+                  break;
+            case2:
+               console.log("Tuesday");
+                  break;
+            case3:
+               console.log("Wednesday");
+                  break;
+            case4:
+               console.log("Thursday");
+                  break;
+            case5:
+               console.log("Friday");
+                  break;
+            case6:
+               console.log("Saturday");
+                  break;
+            case7:
+               console.log("Sunday");
+                  break;
+         } ```
 
-               
+Ternary Operator
+   Is a "shortcut index" it takes an 'IF' and an 'ELSE' and making them a single line of code
    
-   
-   
-   
+   Follows (3) arguments [ condition ? expIfTrue: expIfFalse ]
+      Example
+         let num  =7;
+      
+         if(num === 7) {
+            console.log("lucky!")
+         }
+         else {
+            console.log("BAD!");
+         }
+      Example w/ Ternary shorthand
+         num === 7 ? console.log("lucky"): console.log("BAD!");
+
+      Example using Variable
+         let status = 'offline';
+         let color;
+            if (status === 'offline') {
+               color ='red';
+            }
+            else {
+               color = 'green';
+            }
+      Variable Example w/ shorthand
+          let color = status ==='offline' ? ''red' : 'green';
+      
