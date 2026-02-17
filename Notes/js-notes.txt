@@ -466,7 +466,7 @@ Arrays & Object - Collections of Data
                Takes a value from the end of an array and will return to the user.
                   shoppingList Example
                      shoppingList.pop() // Pancake.mix
-               Removes the what the "Popped" Variable was. If you pop an entire array it will start to return "Undefined"
+               Removes what the "Popped" Variable was. If you pop an entire array it will start to return "Undefined"
 
             Unshift
                Removes elements from the start of an array. Returns the start of an array
@@ -480,7 +480,7 @@ Arrays & Object - Collections of Data
             
             More methods
                concat() Merges two or more arrays into a new merged Array
-                  Syntax : array1.concat(array2));
+                  Syntax : array1.concat(array2);
                      let concat = array1(array2, array3)
                         //concat = array1, array2, array3
                The order of arrays are passed as arguments that determines the order of the concatenated array
@@ -509,7 +509,7 @@ Arrays & Object - Collections of Data
                   Join
                      Creates and returns a new string by concatenating all elemments in an array, seperated by commas or specified seperator strings
                         Example
-                           const elements = [
+                           let elements = [
                               'fire',
                               'Air',
                               'Water',
@@ -604,4 +604,3 @@ Arrays & Object - Collections of Data
                ['X', '0', null]
             ]
 
-            
