@@ -4,6 +4,8 @@ Javascript Fundamentals Hand out --> https://lessons.springboard.com/JS-Fundamen
 
 Javascript Conditional Logic --> https://lessons.springboard.com/Conditional-Logic-a877acf3d3de44d6a3377d5fc0fbe3f7
 
+Arrays in Javascript --> https://lessons.springboard.com/Arrays-308541a840c849f78ab324f68e3d30b3
+
 
 
 ====================================================
@@ -279,7 +281,7 @@ Conditional Logic
 
    Conditional Statements 
       There are 3 types of conditionals statements
-         If
+         IF
          ELSE IF
          ELSE
 
@@ -403,4 +405,203 @@ Ternary Operator
             }
       Variable Example w/ shorthand
           let color = status ==='offline' ? ''red' : 'green';
-      
+
+
+Arrays & Object - Collections of Data
+   Goals 
+      * Work with Arrays
+      * Write Object Literals
+      * Understand reference types
+      * Use common Array/Object methods
+
+   Arrays
+      Ordered collections of values
+         Common Examples
+            * List of comments on an social media postion
+            * Collection of levels in a game
+            * Songs in a playlist
+
+      Making an Array
+         let newArray = [1,2,3]
+         let newStringArray = ['Milk','Eggs','Bacon']
+
+   Array Indices
+      Arrays have a corresponding index 
+         Example
+            let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet' ]; 
+               colors[0] //red
+               colors[1] //orange
+               colors[2] //yellow
+               colors[3] //green
+               colors[4] //blue
+               colors[5] //indigo
+               colors[6] //violet
+            
+      Modifing Arrays
+         Arrays are mutiable so we can modify and change them.
+         You can change an array by accessing it's index value [#]
+
+            Array Modification Syntax
+               (Example Array)
+                  let shoppingList = ['Milk', 'eggs', 'bacon']
+            
+            (Array Update Example)
+               shoppingList[0] = 'Skim Milk';
+               shoppingList[1] = 'Pasture-raised Eggs';
+               shoppingList[2] = 'Thin-cut bacon'
+
+            Push
+               Adds an element to an array at the end the array.
+
+                  Example of Push
+                     shoppingList.push('Butter', 'Pancake Mix')
+                        // shoppingList 
+                           Skim Milk
+                           Pasture-raised Eggs
+                           Thin-cut bacon
+                           Butter
+                           Pancake-mix
+            
+            Pop
+               Takes a value from the end of an array and will return to the user.
+                  shoppingList Example
+                     shoppingList.pop() // Pancake.mix
+               Removes the what the "Popped" Variable was. If you pop an entire array it will start to return "Undefined"
+
+            Unshift
+               Removes elements from the start of an array. Returns the start of an array
+                  Example Array
+                     let dishesToDo = ['Big Platter']
+                        dishesToDo.unshift('Large Plate')
+                        dishesToDo.unshift('Small Plate')
+            
+            Shift
+               Removes the first element from an array and returns that removed element.
+            
+            More methods
+               concat() Merges two or more arrays into a new merged Array
+                  Syntax : array1.concat(array2));
+                     let concat = array1(array2, array3)
+                        //concat = array1, array2, array3
+               The order of arrays are passed as arguments that determines the order of the concatenated array
+
+            Includes
+               Includes looks for a value, it's a boolean (TRUE or FALSE) element 
+               Internet Explorer does not support .Include
+               Looks for (1:1) match in an array
+                  shoppingList.Includes('Butter')  //true
+                     shoppingList.includes('Eggs') //false
+
+               Syntax: if(shoppingList.includes('Skim Milk')) {
+                  console.log('I am lactose intolerant I will get sick)
+               }
+
+               indexOf
+                  Works like the strings version of .indexOf when looking for  a value
+                     shoppingList.indexOf('Skim Milk) // 0 
+
+                  Reverse
+                     Syntax Example
+                        Let letters = [ 'A','B', 'C', 'D', 'E', 'G']
+                           letters.reverse // G, E, D, C, B, A
+                     Running array in reverse will mutilate the array and change it.
+
+                  Join
+                     Creates and returns a new string by concatenating all elemments in an array, seperated by commas or specified seperator strings
+                        Example
+                           const elements = [
+                              'fire',
+                              'Air',
+                              'Water',
+                           ];
+
+                        console.log(elements.join{});
+                           //"Fire,Air,Water"
+                     If joining non-string elements, It will create and return a string
+
+                  slice
+                     It takes a portion of an array and allows you to copy and return the array into a new array
+                        Example
+                           let animals = [
+                              'shark',
+                              'salmon',
+                              'whale',
+                              'bear',
+                              'lizard',
+                              'Tortoise'
+                           ]; 
+                           
+                           let swimmers = animals.slice(0,3); 
+                              // Shark, Salmon, whale
+                           let mammals = animals.slice(2,4);
+                              // "Whale", "Bear"
+                           let reptiles = animals.slice(4,6) or (4)
+                              // "Lizard", "Tortoise"
+
+                  Splice
+                     It removes and replaces an element in an array or it could add more elements into the array
+                     Uses 3 diffrerent Variables
+                        * start
+                        * deleteCount
+                        * Items to delete(optional)
+
+                     Syntax Example
+                     var arrDeletedItems = array.splice(start[, deleteCount[item1[,item2[etc.]]]])
+                        animals.splice(1,0, 'Octopus')
+                  
+                  Sort
+                     Sorts the elemnents of an array "in place" and returns the sorted array. The defult sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units
+                        Example
+                           let people = ['Mrs. Robinson', 'Angie', 'Jolene', 'Maggie May', 'Roxanne'];
+                             //people.sort() "Angie", "Jolene", "Maggie May", "Mrs. Robinson", "Roxanne"
+                           let nums = [34, 10, 100000, 67, 99]
+                             //nums.sort [10, 100000, 34, 67, 99]
+
+                        Because the defult sort converts everything into a "string" it numbers based on there UTF-16 codes.
+
+      Reference Types
+         Variables that store primitive type contain values stored in memory.
+         Arrays are stored in reference to it's memory.
+
+   
+   Const & Arrays
+       You can change the value in a const element using arrays because your not changing the actual value of the Variable, but changing the reference of said Variable.
+         Example
+            const myEggs = ['brown', 'brown'];
+               const myEggs --> Can not be changed, however the data in the arrays can.
+                myEggs.push('purple');
+                myEggs[0] = 'green';
+         You can not change the values in the array directly.
+            Example
+               myEggs = ['blue', 'pink']; // Will not work due to change the values directly.
+   
+   Nested Arrays
+      Nested arrays are like nested strings. you can stack arrays inside arrays, inside arrays.
+         Example
+            const colors = [
+               ['red', 'crimson'],
+               ['orange', 'dark orange'],
+               ['yellow', 'golden rod'],
+               ['green', 'olive'],
+               ['blue', 'navy blue']
+               ['purple', 'orchid']
+            ]
+            
+         Arrays are indexed like strings so calling [2] will give the second (3rd) array in the index
+            Example
+               colors[2] // Will return ["yellow", "golden rod"]
+         You can further add indexes to search not just the array, but also whats in the array.
+            Example
+               colors[2] [0] // Will return ["yellow"] 
+         In you change the Variable inside the array by using the previous command
+               colors[2] [0] = 'gold'
+                  colors[2] // will retrun [ "gold, "golden rod"]
+         
+         Tick Tack Toe board Example
+            const board = [
+               ['0', null, 'X']
+               [null, 'X'. '0']
+               ['X', '0', null]
+            ]
+
+            
