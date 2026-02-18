@@ -6,6 +6,7 @@ Javascript Conditional Logic --> https://lessons.springboard.com/Conditional-Log
 
 Arrays in Javascript --> https://lessons.springboard.com/Arrays-308541a840c849f78ab324f68e3d30b3
 
+Objects in Javascript --> https://lessons.springboard.com/Objects-4cdec0fc99b045c5881d6a864cd544bd
 
 
 ====================================================
@@ -407,7 +408,7 @@ Ternary Operator
           let color = status ==='offline' ? ''red' : 'green';
 
 
-Arrays & Object - Collections of Data
+Arrays - Collections of Data
    Goals 
       * Work with Arrays
       * Write Object Literals
@@ -604,3 +605,101 @@ Arrays & Object - Collections of Data
                ['X', '0', null]
             ]
 
+
+Objects
+   An object allows the use to store data in groups in specified labels.
+      Example of an object
+         const fitbitData {
+            totalSteps        : 308727,
+            totalMiles        : 211.7,
+            avgCalorieBurn    : 5755,
+            workoutsThisWeek  :'5 of 7',
+            avgGoodSleep      :'2:13;
+         };
+   Objects are collections of properties.
+   properties are a "key-value' pair
+   Rather than accessing data with the index , objects allow the use of custom keys.
+
+   Object literal Syntax uses curly braces {}
+      Syntax to get isolated objected data 
+         fitbitData.totalSteps // Will return 308727.
+   All keys will be converted to strings in an object.
+
+   You can sort of use numbers as a key for an object, however you won't be able to navigate to them in console. 
+      Example
+         const num = {
+            100      : 'one hundred'
+            16       : 'sixteen'
+         }
+      num.16 // will result in a syntax errors
+      num.[16] // will return with "sixteen"
+
+   If using square brackets with words then they must be in quotes
+      Example
+         const palette = {
+            red    : '#eb4d4b',
+            yellow : '#f9ca24',
+            blue   : '#30336b'
+         }
+      //const[red] will not run, but const['red'] will
+
+   Nested Objects and arrays
+
+      Example
+         const student = {
+            firstName   :'David',
+            lastName    :'Jones',
+            strengths   : ['Music', 'Art' ],
+            Exams       :{
+               midterm  :92,
+               final    :88
+            }
+         }
+
+const avg = (student.exams.midterm + student.exams.final) /2;
+
+      shoppingList Example
+         const shoppingCart = [
+            {
+               product  : 'Jenga Classic',
+               price    :  6.88,
+               quantity :  1
+            },
+            {
+               product  : 'Echo Dot',
+               price    :  29.99,
+               quantity :  3
+            },
+            {
+               product  : 'Fire Stick',
+               price    :  39.99,
+               quantity :  2
+            }
+         ];
+
+   Objects and reference types
+      Example
+         let nums = [1,2,3];
+         let mystery = [1,2,3];
+            nums === mystery // results in False |  They are different Variables with different memory references 
+            nums == mystery // results in False  |  They are different Variables with different memory references
+         
+      Furher Example
+         const user = {
+            username      : 'CherryGarcia8',
+            email         : 'garcia@gmail.com',
+            notifications :  []
+         };
+
+            if (user.notifications === []) {
+               console.log(('NO NEW NOTIFICATIONS!');
+            } // This will not run because [] is saved under a different memory from {notifications : [] }
+
+            if user.notifications.length === 0 {
+               console.log ('NO NEW NOTIFICATIONS!');  // Will work because it reference the object property in meemory.
+            }
+      
+
+
+
+   
