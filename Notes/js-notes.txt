@@ -8,6 +8,8 @@ Arrays in Javascript --> https://lessons.springboard.com/Arrays-308541a840c849f7
 
 Objects in Javascript --> https://lessons.springboard.com/Objects-4cdec0fc99b045c5881d6a864cd544bd
 
+Loops in Javascript --> https://lessons.springboard.com/Loops-eae8c60952eb4875be1798cf70aff92f
+
 
 ====================================================
 
@@ -656,7 +658,7 @@ Objects
             }
          }
 
-const avg = (student.exams.midterm + student.exams.final) /2;
+   const avg = (student.exams.midterm + student.exams.final) /2;
 
       shoppingList Example
          const shoppingCart = [
@@ -698,8 +700,137 @@ const avg = (student.exams.midterm + student.exams.final) /2;
             if user.notifications.length === 0 {
                console.log ('NO NEW NOTIFICATIONS!');  // Will work because it reference the object property in meemory.
             }
+
+Loops
+   Goals 
+      * Write for loops
+      * Write while loops
+      * Avoid infinite loops!
+      * Iterate over arrays and objects
+
+   Loops allow for the repeating of  code 
+      // Print 'hello World!' 10 totalMiles
+      // sum all numbers in an array
+
+   The types of loops:
+      * for loop
+      * while loop
+      * for ...of loop
+      * for ...in loop
       
+   for loop syntax
+      for(
+         [initalExpression];
+         [condition];
+         [incrementExpression]
+      )
+         Example
+            for (let i = 1; i <=10; i++);
 
+   You can loop arrays and strings
+      const animals = [ 'lions', 'tigers', 'bears' ];
+         for(let i= 0; i < animals.length; i++) {
+            console.log(i, animals[i]);
+         }
+      const examScores = [ 98, 77, 84, 91, 57, 66];
+         for(let i = 0; i <= examScores.length; i++)
+      
+      const myStudents = [
+         {
+            firstName : 'Zeus',
+            grade     : 86
+         }
+         {
+            firstName : 'Artemis',
+            grade     : 97
+         }
+         {
+            firstName : 'Hera',
+            grade     : 72
+         }
+         {
+            firstName : 'Apollo',
+            grade     : 90
+         }
+      ]
 
+         for(let i =  0; i < myStudents.length; i++){
+            let student = myStudents[i]
+            console.log(`${student.firstName} Scored ${student.grade}`);
+         }
 
+   Nested Loops
+    Example
+      for(let i=1; i <= 10; i++) {
+         console.log('Outer Loop:', i);
+         for(let j = 10, j>=10; j-=2){
+            console.log(' Inner Loop',j)
+         }
+      }
+
+   While loop 
+      A while loop will run continously as long as it's tested condition is = True
+         Example 
+            let j = 0;
+               while (j <= 10) {
+                  console.log(j);
+                  j++;
+               }
+
+            const target = Math.floor(Math.random() * 10); {
+                console.log("Target", target);
+            }
+            let guess = Math.floor(Math.random() * 10);
+               while(guess !== target) {
+                  console.log("Guess", guess);
+                  guess =  Math.floor(Math.random() *10)
+            };
+
+            console.log(`Target: ${target} Guess: ${guess}`);
+            console.log(`You Guessed It correctedly`)
    
+   breaking loops
+      for(let i=0; i< 10; i++) {
+         console.log(i);
+         if (i === 5) {
+            break;
+         }
+      }
+
+   FOR of (not supported by internet explorer)
+      A easier way of iterating over arrays
+         for (variable of iterable) {
+            statement
+         }
+      
+      Example
+         let subreddits - ['soccor', 'popheads', 'cringe', 'books'];
+            for(let i= 0; <subreddits.length; i++){
+               console.log(subreddits;[i]);
+            }
+         
+      With 'FOR OF'
+         for( let sub of subreddits) {
+            console.log(sub)
+         }
+         const words1 = [ 'mail','milk','bath','black'];
+         const words2 = [ 'box','shake','tub','berry' ];
+            for(let i = 0; i < words1.length; i++) {
+               console.log(`${words1[i]}${words2[i]}`)
+
+   Looping over objects
+      Example
+         const movieReviews = {
+            'Arrival'              : 9.5,
+            'Alien'                : 9,
+            'Amelie'               : 8,
+            'In Bruges'            : 9,
+            'Amadeus'              : 10,
+            'Kill Bill'            : 8,
+            'Little Miss Sunshine' : 8.5,
+            'Coraline              : 7.5
+         };
+      You cann't loop an object, however you can loop either the keys or the values (Key:Value)
+
+      
+        
