@@ -10,6 +10,7 @@ Objects in Javascript --> https://lessons.springboard.com/Objects-4cdec0fc99b045
 
 Loops in Javascript --> https://lessons.springboard.com/Loops-eae8c60952eb4875be1798cf70aff92f
 
+Functions in Javascript --> https://lessons.springboard.com/JS-Functions-e1725123cfc64a729bbdb0765db642d6
 
 ====================================================
 
@@ -830,7 +831,113 @@ Loops
             'Little Miss Sunshine' : 8.5,
             'Coraline              : 7.5
          };
-      You cann't loop an object, however you can loop either the keys or the values (Key:Value)
+      You can't loop an object, however you can loop either the keys or the values (Key:Value)
 
+Functions
+   Goals
+      * Write valid functions
+      * Write functions with arguments
+      * Compare function expressions & function statements
+      * Write a bunch of functions
+
+   A function allows  us to write reusable, modular code.
+   We define a "chunk" of code that we can execute at a later point
+
+      Syntax Example
+         function functionName() {
+            //do something
+         }
+
+         function grumpus() {
+            console.log('ugh...you again...');
+            console.log('FOR THE LAST TIME...');
+            console.log('LEAVE ME ALONE!!!');
+         }
+
+      Looped Example
+         for(let i=0; i < 50; i++) {
+            grumpus();
+         }
       
-        
+      Dice Example
+         funtion rollDice() {
+            let roll = Math.floor(Math.random() * 6) +1;
+            console.log(`Rolled: ${roll}`);
+         }
+
+         function throwDice() {
+            rollDice()
+            rollDice()
+            rollDice()
+            rollDice()
+            rollDice()
+         }
+         
+   Function arguments
+      An argument is an acceptable input that can be used to call a function
+
+      Argument Example
+         function greet(nickname){
+            console.log(`Hello ${nickname}, Welcome back`)
+         }
+         //running greet('Tim') will run -- "Hello Tim, Welcome back"
+
+      Loop Example
+         function throwDice(numRolls) {
+            for(let i = 1; i < numRolls; i++) {
+               rollDice();
+            }
+         }
+   Mutiable Functions 
+      function sum(x, y) {
+         console.log(x + y);
+      }
+
+      function divide(a,b) {
+         console.log(a / b);
+      }
+       // divide (1,4)
+          // retuns 0.25
+       // divide (4,1)
+          // returns 4
+
+      The order of matters when passing mutiple arguments
+
+   Return
+      Built in methods return values when called upon. The values can be stored
+      You can capture a return in a variable
+
+         function add(x, y) {
+            return x + y; 
+         }
+
+         const sum = add(10, 16);
+         sum; // 26
+
+         const answer = add(100, 200);
+         answer; //300
+      
+      You can not return more than 1 thing, but you can have mutiple return statements
+
+      Return statements ends function execution and specifies the value that is returned by the function
+
+         function isPurple(color)
+            if(color === 'purple'){
+               return true;
+            }  
+            else {
+               console.log('Try again')
+               return false;
+            }
+
+            function isPurple(color) {
+               return color.toLowerCase() === 'purple';
+            }
+            function containsPurple(arr) {
+               for (let color of arr) {
+                  if (color === 'purple' || color === 'magenta') {
+                     return true;
+                  }
+               }
+               return false;
+            }
